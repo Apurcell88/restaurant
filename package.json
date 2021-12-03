@@ -1,0 +1,25 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "This project shows use of Webpack as well as lots of JS DOM manipulation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apurcell88/restaurant.git"
+  },
+  "author": "Adam Purcell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Apurcell88/restaurant/issues"
+  },
+  "homepage": "https://github.com/Apurcell88/restaurant#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}

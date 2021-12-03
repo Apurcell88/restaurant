@@ -1,3 +1,8 @@
+:root {
+    --white: white;
+    --orange: rgba(245, 143, 20, 0.7);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +20,7 @@ body {
     font-family: 'Luckiest Guy', cursive;
     padding-top: 2.4rem;
     font-size: 3rem;
-    color: white;
+    color: var(--white);
     height: 50%;
 }
 
@@ -32,7 +37,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 17vh;
-    background-color: rgba(245, 143, 20, 0.7);
+    background-color: var(--orange);
 }
 
 .nav {
@@ -43,7 +48,7 @@ body {
 
 .nav-btn {
     font-weight: 400;
-    color: white;
+    color: var(--white);
     background-color: rgba(245, 143, 20, 0);
     border: none;
     height: 3rem;
@@ -57,11 +62,12 @@ body {
 }
 /* ------------------------------------------------------ */
 
-/* ------------------ Home Page Main -------------------- */
+/* ------------------ Home Page -------------------- */
 .main {
     display: flex;
     flex-direction: column;
     height: 83vh;
+    justify-content: center;
 }
 
 .description-container {
@@ -69,3 +75,37 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.description-top {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.description-bottom {
+    color: #a37800;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.order-btn {
+    width: 8.5rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--white);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition-duration: 0.3s;
+}
+
+.order-btn:hover {
+    background:rgb(245, 143, 20);
+    color: var(--white);
+    width: 9rem;
+    height: 3rem;
+}
+/* --------------------------------------------- */
+
+/* -------------- Menu Page -------------------- */
