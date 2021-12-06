@@ -13,13 +13,14 @@
 body {
     background: url("tacos.jpg") no-repeat;
     background-position: center;
+    min-height: 100%;
 }
 
 /* ----------------- Home Page Header ------------------- */
 .restaurant-name {
     font-family: 'Luckiest Guy', cursive;
     padding-top: 2.4rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--white);
     height: 50%;
 }
@@ -59,6 +60,12 @@ body {
 
 .nav-btn:hover {
     margin: 0 30px 0 0;
+}
+
+@media only screen and (min-width: 499px) {
+    .restaurant-name {
+        font-size: 3rem;
+    }
 }
 /* ------------------------------------------------------ */
 
@@ -109,3 +116,74 @@ body {
 /* --------------------------------------------- */
 
 /* -------------- Menu Page -------------------- */
+.menu {
+    background: rgba(245, 143, 20, 0.5);
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 70vw;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: rgba(245, 143, 20, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 17%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.menu-card:hover {
+    background:rgb(253, 187, 106);
+}
+
+.dish-description {
+    color: white;
+}
+
+@media only screen and (min-width: 800px) {
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .menu-card {
+        width: 40%;
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .menu {
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .menu {
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .menu {
+        width: 50vw;
+    }
+}
+/* ----------------------------------------------- */
+
+/* ---------------- Contact Page ------------------- */
+
+
+
+
+/* --------------------------------------------------- */
