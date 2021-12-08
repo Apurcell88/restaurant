@@ -16,7 +16,6 @@ function createContact() {
     return contact;
 }
 
-
 function loadContact() {
     const main = document.querySelector('main');
     main.innerText = '';
